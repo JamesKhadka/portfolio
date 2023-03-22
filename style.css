@@ -8,7 +8,67 @@
   background-image: url(photo/font.jpg);
  background-size: cover;
   background-repeat: no-repeat;
+}
+.container{
+  padding: 10px 10%;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
-  
+nav ul li {
+ display: inline-table;
+ list-style: none;
+ margin: 10px 20px;
 
+}
+nav ul li a{
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 30px;
+  position: relative;
+
+}
+nav ul li a::after{
+  content: '';
+  width: 0%;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom:-6px;
+  transition : 0.3s;
+}
+nav ul li a:hover::after{
+  width:100%
+}
+.header-text{
+  color: antiquewhite;
+  margin-top: 20%;
+  font-size: 30px;
+
+}
+.header-text h1{
+  font-size: 60px;
+  margin-top: 20px;
+}
+.header-text h1 span{
+  color: #ff004f;
+}
+ 
+/*.............CSS FOR SMALL MEDIA........*/
+@media only screen and (max-width:600px){
+  back-image{
+    background-image: url(photo/font.jpg)
+  }
+  .header-text{
+    margin-top: 100%;
+    font-size: 16px;
+  }
+  .header-text h1{
+    font-size: 30px;
+  }
 }
