@@ -9,28 +9,35 @@
  background-size: cover;
   background-repeat: no-repeat;
 }
-.container{
+.container {
+
   padding: 10px 10%;
+
 }
-nav{
+nav ul li  {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: inline-block;
+  margin: 15px;
   flex-wrap: wrap;
-}
 
-nav ul li {
- display: inline-table;
- list-style: none;
- margin: 10px 20px;
+  
+ }
+ nav ul li a{
+  
+   color: white;
+   text-decoration: none;
+   font-size: 30px;
+   position: relative;
+   
+ } 
 
-}
-nav ul li a{
-  color: whitesmoke;
-  text-decoration: none;
-  font-size: 30px;
-  position: relative;
+nav{
 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  
 }
 nav ul li a::after{
   content: '';
@@ -46,7 +53,7 @@ nav ul li a:hover::after{
   width:100%
 }
 .header-text{
-  color: antiquewhite;
+  color: white;
   margin-top: 20%;
   font-size: 30px;
 
