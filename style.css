@@ -16,19 +16,14 @@ nav ul li  {
   display: flex;
   display: inline-block;
   margin: 15px;
-  flex-wrap: wrap;
- 
-  
+  flex-wrap: wrap; 
  }
  nav ul li a{
   
    color: white;
    text-decoration: none;
    font-size: 30px;
-   position: relative;
-
-   
-   
+   position: relative; 
  } 
 
 nav{
@@ -36,9 +31,7 @@ nav{
   display: flex;
   justify-content: space-between;
   align-items: center ;
-  flex-wrap: wrap;
-
-  
+  flex-wrap: wrap; 
 }
 nav ul li a::after{
   content: '';
@@ -58,18 +51,11 @@ nav ul li a:hover::after{
   color: white;
   margin-top: 20%;
   font-size: 40px;
-  padding: 10px 200px;
- 
-
-  
+  padding: 10px 200px;  
 }
 .header-text h1{
   font-size: 60px;
   margin-top: 20px;
-  
-  
- 
-  
 }
 .header-text h1 span{
   color: #ff004f;
