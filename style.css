@@ -4,38 +4,39 @@
 }
 
 body {
-  /* font-family: 'Josefin Sans', sans-serif; */
+  font-family: 'Josefin Sans', sans-serif;
   font-family: 'Poppins', sans-serif;
   max-height: 100vh;
-  background-color: #1F252E;
+  background-color: #EAEBED;
+
 }
 
 /*nav */
 header {
   padding: 1.7rem 1rem;
-  background-color: #fff;
+  backdrop-filter: blur(10px);
+  background-color: transparent;
   display: flex;
   justify-content: space-between;
-  max-width: 80%;
+  max-width: 100%;
   margin: auto;
   align-items: center;
-  background-color: transparent;
 }
 
 .logo {
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: 800;
 }
 
 .logo a {
-  color: #fff;
+  color: #113D6B;
   text-decoration: none;
 }
 
 nav a {
-  color: #fff;
+  color: #113D6B;
   text-decoration: none;
-  font-size: .97rem;
+  font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: .7px;
   padding: 1rem;
@@ -44,17 +45,14 @@ nav a {
 
 nav a.active,
 nav a:hover {
-  color: #00E8F8;
+  background-color: #113D6B;
+  color: #fff;
   border-radius: 1rem;
   transition: all.3s ease-in-out;
 }
 
 #click {
   display: none;
-}
-
-.menu i {
-  color: #00E8F8;
 }
 
 .menu {
@@ -65,29 +63,26 @@ nav a:hover {
 
 section {
   margin: 2rem 8.5rem;
-  ;
+
 }
 
 .main {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 5% repeat(2, 1fr);
+  column-gap: 1.5rem;
   justify-content: space-between;
   align-items: center;
   margin: 5rem auto;
 }
 
 .main h1 {
-  font-size: 2.5rem;
+  font-size: 4rem;
   font-weight: 600;
-  color: #fff;
-  /* animation: check 1s ease forwards;
-  animation-delay: .1s; */
 }
 
 .main p {
   margin-top: 1rem;
-  font-size: .98rem;
-  color: #fff;
+  font-size: .99rem;
 }
 
 .social {
@@ -98,58 +93,80 @@ section {
 }
 
 .social a {
-  color: #00E8F8;
-  font-size: 1rem;
-  border: 1.6px solid #00E8F8;
+  color: #113D6B;
+  font-size: 6rem;
+  border: 2px solid #113D6B;
   border-radius: 50%;
-  padding: .35rem;
+  padding: 1rem;
   text-align: center;
   width: 26px;
 }
 
 .social a:hover {
-  color: #1F252E;
-  background-color: #00E8F8;
-  box-shadow: 0 0 20px #00E8F8;
+  color: #fff;
+  background-color: #113D6B;
   transition: all .3s ease-in-out;
 }
 
 .main h1 span:nth-child(1) {
-  font-size: 1.5rem;
+  font-size: 3rem;
 }
 
-.main h1 span:nth-child(2) {
-  color: #00E8F8;
+.button button {
+  background-color: transparent;
+  border: 1px solid #0e71dc;
+  border-radius: 0.4rem;
+  font-size: medium;
+  margin-top: 2rem;
+  cursor: pointer;
+  padding: 0.8rem 1.2rem;
+}
+
+.button button:hover {
+  background-color: #113D6B;
+  color: #fff;
+  transition: all .3s ease-in-out;
+  transform: scale(.91);
 }
 
 .images {
-  background-image: url(/img/graph5.png);
+  background-image: url('https://task025.w3spaces.com/graph6.png');
   background-repeat: no-repeat;
   background-position: 0 -75px;
-  -webkit-box-shadow: 0 10px 10px -10px #000000;
-  -moz-box-shadow: 0 10px 10px -10px #000000;
-  box-shadow: 0px 16px 4px -10px #00E8F8;
-  width: 528px;
-  background-size: cover;
+  background-position: 0px -74px;
 }
 
-/* @keyframes check {
-  0% {
-      transform: translateY(-100px);
-      opacity: 0;
+@media only screen and (max-width: 1024px) {
+  section {
+    margin: 2rem 2.5rem;
   }
-  100% {
-      transform: translateY(0);
-      opacity: 1;
+}
+
+@media only screen and (max-width:768px) {
+  html {
+    font-size: 95%;
   }
-} */
+
+  header {
+    max-width: 100%;
+  }
+
+  section {
+    margin: 0rem 1.5rem;
+  }
+
+  .images {
+    background-position: center;
+    background-size: cover;
+  }
+}
 
 @media only screen and (max-width:480px) {
   .menu {
     display: block;
     font-size: 1.5rem;
     font-weight: bold;
-    color: #244D61;
+    color: #113D6B;
   }
 
   header {
@@ -162,11 +179,10 @@ section {
     position: absolute;
     display: grid;
     top: 75px;
-    text-align: center;
-    background-color: #1F252E;
-    left: -100%;
-    z-index: 1;
     width: 100%;
+    text-align: center;
+    background-color: #fff;
+    left: -100%;
   }
 
   #click:checked~nav {
@@ -178,4 +194,10 @@ section {
     margin: 1rem 1.5rem;
   }
 
+  .main {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
