@@ -1,58 +1,428 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>portfolio</title>
-  
-</head>
-
+    <title>pars coder || Portfolio Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<head>
 <body>
+    <!-- header site  -->
     <header>
-        <div class="logo">
-            <a href="#">James</a>
-        </div>
-        <input type="checkbox" id="click">
-        <label for="click" class="mainicon">
-            <div class="menu">
-                <i class="bi bi-list"></i>
-            </div>
-        </label>
-        <nav>
-            <a href="#" class="active">Home</a>
-            <a href="#">Project</a>
-            <a href="#">Skills</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-        </nav>
+        <div class="logo"><span>A</span>mrit.</div>
+        <ul class="navlist">
+            <li><a href="#home" style="--i:1;">Home</a></li>
+            <li><a href="#about" style="--i:2;">About</a></li>
+            <li><a href="#services" style="--i:3;">Services</a></li>
+            <li><a href="#skills" style="--i:4;">Skills</a></li>
+            <li><a href="#portfolio" style="--i:5;">Portfolio</a></li>
+            <li><a href="#contact" style="--i:6;">Contact</a></li>
+        </ul>
+        <div id="menu-icon" class="bx bx-menu"></div>
     </header>
 
 
-    <section>
-        <div class="main">
-            <div class="social">
-                <a href="https://twitter.com/James_khadka__"><i class="bi bi-twitter"></i></a>
-                <a href="https://www.instagram.com/james_khadka__/"><i class="bi bi-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/james-khadka-26b100236/"><i class="bi bi-linkedin"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=100073083227624"><i class="bi bi-facebook"></i></a>
-            </div>      
-            <div class="detail">
-                <h1><span>Hi, It's Me</span> <br> I'm <span style="color:#113D6B;">james khadka</span></h1>
-                <p>student of BScCSIT<br>SO CALLED CODER </p>
-                <div class="button">
-                    <button>Download CV</button>
+    <!-- home section -------------------------------------------------------->
+    <section id="home" class="home">
+        <div class="home-content scroll-scale">
+            <h1>Hi! I'm Amrit Pandey</h1>
+            <div class="change-text">
+                <h3>And I'm</h3>
+                <h3>
+                    <span class="word">Youtuber</span>
+                    <span class="word">Web&nbsp;Designer</span>
+                    <span class="word">Frontend&nbsp;Developer</span>
+                    <span class="word">UX/UI&nbsp;Developer</span>
+                    <span class="word">Certified&nbsp;Ethical&nbsp;Hacker</span>
+                </h3>
+            </div>
+            
+            <p>Ethical Hacking and Degital Creative Director working in design field for 5 years so far.specialized in UI/UX, Branding and digital designs.</p>
+
+            <div class="info-box">
+                <div class="email-info">
+                    <h5>Email :</h5>
+                    <span>pandeyamrit246@gmail.com</span>
+                </div>
+                <div class="behance-info">
+                    <h5>Behance :</h5>
+                    <span>behance.net/amrit</span>
                 </div>
             </div>
-            <div class="images">
-                <img src="https://task025.w3spaces.com/self3.png" alt="" width="100%">
+
+            <div class="btn-box">
+                <a href="#" class="btn">Download cv</a>
+                <a href="#" class="btn">Hire Me Now!</a>
+            </div>
+
+            <div class="social-icons">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-dribbble' ></i></a>
+
             </div>
         </div>
+
+        <div class="home-image scroll-scale">
+            <div class="img-box">
+                <img src="img/man.png" alt="">
+            </div>
+            <div class="liquid-shape">
+                <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                <path fill="#12f7ff">
+                    <animate attributeName="d"
+                         dur="20000ms"
+                         repeatCount="indefinite"
+                         values="
+                         M467.5,309.5Q456,369,400,390.5Q344,412,297,449.5Q250,487,208,441.5Q166,396,130,368Q94,340,93.5,295Q93,250,92.5,204.5Q92,159,116.5,110.5Q141,62,195.5,61Q250,60,290.5,85Q331,110,366,136.5Q401,163,440,206.5Q479,250,467.5,309.5Z;
+
+                         M432,304Q437,358,400.5,402.5Q364,447,307,442.5Q250,438,203.5,424Q157,410,103,388Q49,366,37.5,308Q26,250,65,208Q104,166,132.5,130.5Q161,95,205.5,76Q250,57,288,87.5Q326,118,359,143Q392,168,409.5,209Q427,250,432,304Z;
+
+                         M442.5,296.5Q411,343,388,395.5Q365,448,307.5,432Q250,416,202,416Q154,416,118,381.5Q82,347,86,298.5Q90,250,70,192.5Q50,135,110.5,124Q171,113,210.5,86.5Q250,60,309,53Q368,46,411.5,88.5Q455,131,464.5,190.5Q474,250,442.5,296.5Z;
+
+                         M416,299.5Q422,349,398.5,407.5Q375,466,312.5,481.5Q250,497,207,448.5Q164,400,105.5,383.5Q47,367,67,308.5Q87,250,102,211.5Q117,173,121,103.5Q125,34,187.5,49Q250,64,288.5,90.5Q327,117,391,124.5Q455,132,432.5,191Q410,250,416,299.5Z;
+
+                         M438.5,303Q434,356,380.5,370Q327,384,288.5,423.5Q250,463,200,443Q150,423,109,389Q68,355,78.5,302.5Q89,250,104.5,212.5Q120,175,135.5,127Q151,79,200.5,41.5Q250,4,300.5,39.5Q351,75,393,109Q435,143,439,196.5Q443,250,438.5,303Z;
+
+                         M395.5,289.5Q387,329,374.5,386.5Q362,444,306,445Q250,446,190,451.5Q130,457,95,408.5Q60,360,58.5,305Q57,250,59.5,196Q62,142,99.5,98Q137,54,193.5,47.5Q250,41,311,40.5Q372,40,397,95.5Q422,151,413,200.5Q404,250,395.5,289.5Z;
+
+                         M441.5,305.5Q442,361,389,379.5Q336,398,293,407.5Q250,417,210.5,402.5Q171,388,128,366.5Q85,345,44.5,297.5Q4,250,45.5,203Q87,156,119,117Q151,78,200.5,72.5Q250,67,306.5,61Q363,55,374.5,113.5Q386,172,413.5,211Q441,250,441.5,305.5Z;
+
+                         M467.5,309.5Q456,369,400,390.5Q344,412,297,449.5Q250,487,208,441.5Q166,396,130,368Q94,340,93.5,295Q93,250,92.5,204.5Q92,159,116.5,110.5Q141,62,195.5,61Q250,60,290.5,85Q331,110,366,136.5Q401,163,440,206.5Q479,250,467.5,309.5Z;
+                         "
+                    ></animate>
+                </path>
+                </svg>
+            </div>
+
+            <div class="liquid-shape">
+                <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                <path fill="#12f7ff">
+                    <animate attributeName="d"
+                         dur="20000ms"
+                         repeatCount="indefinite"
+                         values="
+                         M467.5,309.5Q456,369,400,390.5Q344,412,297,449.5Q250,487,208,441.5Q166,396,130,368Q94,340,93.5,295Q93,250,92.5,204.5Q92,159,116.5,110.5Q141,62,195.5,61Q250,60,290.5,85Q331,110,366,136.5Q401,163,440,206.5Q479,250,467.5,309.5Z;
+
+                         M432,304Q437,358,400.5,402.5Q364,447,307,442.5Q250,438,203.5,424Q157,410,103,388Q49,366,37.5,308Q26,250,65,208Q104,166,132.5,130.5Q161,95,205.5,76Q250,57,288,87.5Q326,118,359,143Q392,168,409.5,209Q427,250,432,304Z;
+
+                         M442.5,296.5Q411,343,388,395.5Q365,448,307.5,432Q250,416,202,416Q154,416,118,381.5Q82,347,86,298.5Q90,250,70,192.5Q50,135,110.5,124Q171,113,210.5,86.5Q250,60,309,53Q368,46,411.5,88.5Q455,131,464.5,190.5Q474,250,442.5,296.5Z;
+
+                         M416,299.5Q422,349,398.5,407.5Q375,466,312.5,481.5Q250,497,207,448.5Q164,400,105.5,383.5Q47,367,67,308.5Q87,250,102,211.5Q117,173,121,103.5Q125,34,187.5,49Q250,64,288.5,90.5Q327,117,391,124.5Q455,132,432.5,191Q410,250,416,299.5Z;
+
+                         M438.5,303Q434,356,380.5,370Q327,384,288.5,423.5Q250,463,200,443Q150,423,109,389Q68,355,78.5,302.5Q89,250,104.5,212.5Q120,175,135.5,127Q151,79,200.5,41.5Q250,4,300.5,39.5Q351,75,393,109Q435,143,439,196.5Q443,250,438.5,303Z;
+
+                         M395.5,289.5Q387,329,374.5,386.5Q362,444,306,445Q250,446,190,451.5Q130,457,95,408.5Q60,360,58.5,305Q57,250,59.5,196Q62,142,99.5,98Q137,54,193.5,47.5Q250,41,311,40.5Q372,40,397,95.5Q422,151,413,200.5Q404,250,395.5,289.5Z;
+
+                         M441.5,305.5Q442,361,389,379.5Q336,398,293,407.5Q250,417,210.5,402.5Q171,388,128,366.5Q85,345,44.5,297.5Q4,250,45.5,203Q87,156,119,117Q151,78,200.5,72.5Q250,67,306.5,61Q363,55,374.5,113.5Q386,172,413.5,211Q441,250,441.5,305.5Z;
+
+                         M467.5,309.5Q456,369,400,390.5Q344,412,297,449.5Q250,487,208,441.5Q166,396,130,368Q94,340,93.5,295Q93,250,92.5,204.5Q92,159,116.5,110.5Q141,62,195.5,61Q250,60,290.5,85Q331,110,366,136.5Q401,163,440,206.5Q479,250,467.5,309.5Z;
+                         "
+                    ></animate>
+                </path>
+                </svg>
+            </div>
+        </div>
+
+
     </section>
 
+    <!-- about section -------------------------------------------------------->
+    <section id="about" class="about">
+        <div class="img-about scroll-scale">
+            <img src="img/about-me-pic2.png" alt="">
+            <div class="info-about2">
+                <span>5+</span>
+                <p>Years of Experience</p>
+            </div>
+            <div class="info-about3">
+                <span>150+</span>
+                <p>Project Complete</p>
+            </div>
+            <div class="info-about1">
+                <span>200+</span>
+                <p>Happy Cionts</p>
+            </div>
+        </div>
+
+        <div class="about-content scroll-scale">
+            <span>Let me introduce myself</span>
+            <h2>About Me</h2>
+            <h3>A story of good</h3>
+            <p>The pain itself, let it be pursued by the adipiscing elitist.  I will explain pain, we lead the architect to release something from pain and flexibility in times of necessity, he seeks to obtain flattery, but he does not want to be pleased with the pain of a life softened by the pain of the happy refusal.
+            </p>
+
+            <div class="btn-box">
+                <a href="#" class="btn">Read More!</a>
+            </div>
+        </div>
+     </section>
+
+
+     <!-- services section -------------------------------------------------------->
+     <section id="services" class="services">
+        <div class="main-text scroll-scale">
+            <span>what i will do for you</span>
+            <h2>Our Services</h2>
+        </div>
+
+        <div class="section-services scroll-bottom">
+            <div class="services-box">
+                <i class='bx bxs-layer service-icon'></i>
+                <h3>Graphic Designer</h3>
+                <p>
+                    Elevate your brand's visual identity with our expert graphic design services. Our team of skilled graphic designers is ready to transform your ideas into captivating visuals that leave a lasting impact. Whether it's crafting a unique logo, creating print materials, or enhancing your online presence, we have the creativity and expertise to make it happen.
+                 </p>
+                 <div class="btn-box service-btn">
+                    <a href="#" class="btn">Read More</a>
+                 </div>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-code-alt service-icon'></i>
+                <h3>Certified Ethical Hacker</h3>
+                <p>
+                    Bolster your cybersecurity with our CEH services. Our certified experts identify and mitigate vulnerabilities in your systems, safeguarding your data. We offer penetration testing, vulnerability assessments, and security consultation to fortify your defenses. Contact us to secure your digital assets and maintain data integrity.
+                 </p>
+                 <div class="btn-box service-btn">
+                    <a href="#" class="btn">Read More</a>
+                 </div>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-desktop service-icon'></i>
+                <h3>Web Developer</h3>
+                <p>
+                    Elevate your online presence with our web development expertise. We create responsive, visually appealing websites tailored to your brand. Our services encompass front-end and back-end development, e-commerce solutions, and custom web applications. Contact us to enhance your digital footprint and engage your audience effectively.
+                 </p>
+                 <div class="btn-box service-btn">
+                    <a href="#" class="btn">Read More</a>
+                 </div>
+            </div>
+        </div>
+
+     </section>
+
+      <!-- skill section -------------------------------------------------------->
+      <section id="skills" class="skills">
+        <div class="main-text scroll-scale">
+            <span>technical and professional</span>
+            <h2>My Skills</h2>
+        </div>
+
+        <div class="skill-main">
+            <div class="skill-left scroll-scale">
+                <h3>Technical Skills</h3>
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>HTML</p>
+                        <p>72%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="html"></span>
+                    </div>
+                </div>
+                
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>CSS</p>
+                        <p>90%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="css"></span>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>Javascript</p>
+                        <p>80%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="javascript"></span>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>CEH</p>
+                        <p>62%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="ceh"></span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="skill-right scroll-scale">
+                <h3>Professional Skills</h3>
+                <div class="professional">
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="90"></div>
+                        <div class="text">
+                            <big>90%</big>
+                            <small>Team Work</small>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="80"></div>
+                        <div class="text">
+                            <big>80%</big>
+                            <small>Creativity</small>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="55"></div>
+                        <div class="text">
+                            <big>55%</big>
+                            <small>Project Management</small>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="70"></div>
+                        <div class="text">
+                            <big>70%</big>
+                            <small>Comiunication</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- portfolio section -------------------------------------------------------->
+      <section id="portfolio" class="portfolio">
+        <div class="main-text scroll-scale">
+            <span>What i will do for you</span>
+            <h2>Letest Project</h2>          
+        </div>
+
+        <div class="container">
+            <div class="fillter-buttons scroll-scale">
+                <button class="button" data-filter="all">All</button>
+                <button class="button" data-filter=".product">Product</button>
+                <button class="button" data-filter=".inter">Interacting</button>
+                <button class="button" data-filter=".web">Web App</button>
+            </div>
+            
+            <div class="portfolio-gallery scroll-bottom">
+                <div class="port-box mix product">
+                    <div class="port-image">
+                        <img src="img/1.jpg" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Certified Ethical Hacker</h3>
+                        <p>
+                            As a certified professional in the field of cybersecurity, I've had the opportunity to assess and fortify the digital security of numerous organizations.
+                        </p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box mix product">
+                    <div class="port-image">
+                        <img src="img/2.jpg" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Web Developer</h3>
+                        <p>
+                            Explore my web development work. I create responsive, engaging websites, e-commerce solutions, and custom web apps. Discover my skills.
+                        </p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box mix inter">
+                    <div class="port-image">
+                        <img src="img/3.jpg" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Web Designer</h3>
+                        <p>
+                            Discover my web design portfolio. I craft visually stunning websites and user experiences that captivate and engage. Explore my work.
+                        </p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box mix inter">
+                    <div class="port-image">
+                        <img src="img/4.jpg" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>UX/UI Developer</h3>
+                        <p>
+                            Explore my UX/UI development projects. I design intuitive, user-centric interfaces that enhance digital experiences. Discover my design expertise.
+                        </p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box mix inter">
+                    <div class="port-image">
+                        <img src="img/5.jpg" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Frontend Developer</h3>
+                        <p>
+                            Delve into my frontend development work. I create visually appealing and responsive user interfaces that drive exceptional user experiences. Discover my skills and projects.
+                        </p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box mix web">
+                    <div class="port-image">
+                        <img src="img/6.jpg" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Content Creactor</h3>
+                        <p>
+                            Explore my diverse content portfolio. I craft engaging videos, articles, and more. Join me in the world of creativity and storytelling. Stay tuned for regular updates.
+                        </p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+      </section>
+
+      <!-- contact section -------------------------------------------------------->
+
+      <section id="contact" class="contant">
+        <div class="main-text scroll-scale">
+            <span>ask me question</span>
+            <h2>Contact Me</h2>          
+        </div>
+
+        <form action="#" class="scroll-bottom">
+            <input type="text" placeholder="Your Name">
+            <input type="text" placeholder="Your Email">
+            <input type="text" placeholder="Your Address">
+            <input type="number" placeholder="Phone Number">
+            <textarea name="" id="" cols="30" rows="10">Your Massage</textarea>
+            <div class="btn-box formBtn">
+                <button type="submit" class="btn">Send Massage</button>
+            </div>
+        </form>
+    </section>
+
+
+    <!-- footer website -->
+    <footer>
+        <p class="scroll-scale">Copyright &copy; 2023 by AmritCoder || All Right  Reservd.</p>
+        <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+    </footer> 
+      
+
+    <script src="mixitup.min.js"></script>
+    <script src="script.js"></script>
+
 </body>
-
-
 </html>
