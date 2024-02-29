@@ -318,12 +318,15 @@ section {
 
 .img-box {
     text-align: center;
+
 }
 
 .img-box img {
     width: 100%;
-    max-width: 450px;
+    max-width: 500px;
     height: auto;
+    border: currentColor;
+
 }
 
 .liquid-shape {
