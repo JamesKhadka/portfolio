@@ -107,6 +107,7 @@ span {
         0 0 150px rgba(18, 247, 255, 0.6);
 }
 
+
 .navlist a.active {
     color: var(--hover-color);
 }
