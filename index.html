@@ -414,14 +414,38 @@
         </div>
 
         <form action="#" class="scroll-bottom">
-            <input type="text" placeholder="Your Name">
-            <input type="text" placeholder="Your Email">
-            <input type="text" placeholder="Your Address">
-            <input type="number" placeholder="Phone Number">
-            <textarea name="" id="" cols="30" rows="10">Your Message</textarea>
+              
+            <div class="input-box field">
+            <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off">
+            <div class="error-txt">Full Name can't be blank</div>
+            </div>
+
+            <div class="input-box field">
+            <input type="text" placeholder="Your Email" id="mail" class="item" autocomplete="off">
+            <div class="error-txt">Email Address can't be blank</div>
+            </div>
+
+             <div class="input-box field">
+            <input type="text" placeholder="Your Address" id="address" class="item" autocomplete="off">
+            <div class="error-txt">Address can't be blank</div>
+           </div>
+
+           <div class="input-box field">
+            <input type="number" placeholder="Phone Number" id="number" class="item" autocomplete="off">
+            <div class="error-txt">Phone Number can't be blank</div>
+           </div>
+
+
+
+           <div class="input-box field">
+            <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message"  class="item" autocomplete="off" ></textarea>
+            <div class="error-txt">Message can't be blank</div>
+           </div>
+
             <div class="btn-box formBtn">
                 <button type="submit" class="btn">Send Message</button>
-            </div>
+            </div><br>
+           
         </form>
     </section>
 
@@ -434,7 +458,13 @@
       
 
  <script src="mixitup.min.js"></script> 
+
+ <script src="https://smtpjs.com/v3/smtp.js"></script> <!--contact-to-mail-->
+
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!--alert after sending details-->
+
     <script src="script.js"></script>
+
 
 </body>
 </html>

@@ -746,6 +746,7 @@ section {
 .contant {
     background: var(--secon-bg-color);
     width: 100%;
+
 }
 
 .contant form {
@@ -753,6 +754,26 @@ section {
     max-width: 50rem;
     margin: 1rem auto;
     margin-bottom: 3rem;
+
+}
+
+.field .error-txt {
+    font-size: 14.5px;
+    color: red;
+    text-align: left;
+    margin: -5px 0 10px;
+    display: none;
+}
+
+.field.error .error-txt {
+
+    display: block;
+}
+
+
+
+form .textarea-field .error-txt {
+    margin-top: -10px;
 }
 
 .contant form input,
@@ -761,9 +782,10 @@ section {
     color: var(--text-color);
     background: var(--bg-color);
     margin-bottom: .8rem;
-    border: none;
+    border: var(--hover-color);
     border-radius: 5px;
     padding: .7rem;
+
 }
 
 .contant form textarea {

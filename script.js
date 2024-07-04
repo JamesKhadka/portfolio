@@ -123,3 +123,98 @@ scrollBottom.forEach((el) => observer.observe(el));
 
 const scrollTop = document.querySelectorAll(".scroll-top");
 scrollTop.forEach((el) => observer.observe(el));
+
+
+//contact-to-mail
+
+const form = document.querySelector("form");
+
+const fullname = document.getElementById("name");
+const email = document.getElementById("mail");
+const address = document.getElementById("address");
+const phone = document.getElementById("number");
+const message = document.getElementById("message");
+
+
+
+
+function sendEmail() {
+
+    const bodyMessage = 'Full name: ${fullname.value}<br> Email: ${email.value} <br> Your Address: ${address.value} <br> Phone Number: ${number.value} <br> Message To Me: ${message.value}  ';
+
+    Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "khadkajames0@gmail.com",
+        Password: "9A387A511D03A59885AF1CFFB51612058669",
+        To: 'khadkajames0@gmail.com',
+        From: "khadkajames0@gmail.com",
+        Subject: fullname.value,
+        Body: bodyMessage
+    }).then(
+        message => {
+            if (message == "OK") {
+                Swal.fire({
+                    title: "Thank You !!",
+                    text: "YOU SUBMIT THE DETAILS!",
+                    icon: "success"
+                });
+            }
+        }
+    );
+}
+
+function checkInputs() {
+    const items = document.querySelectorAll(".item");
+
+    for (const item of items) {
+        if (item.value == "") {
+            item.classList.add("error");
+            item.parentElement.classList.add("error");
+        }
+
+        item.addEventListener("keyup", () => {
+            if (item.value != "") {
+                item.classList.remove("error");
+                item.parentElement.classList.remove("error");
+            }
+            else {
+                item.classList.add("error");
+                item.parentElement.classList.add("error");
+            }
+
+        });
+
+    }
+}
+
+function checkEmail() {
+    const emailRegex = /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
+
+    const errorTxtEmail = document.querySelector(".error-txt.email");
+
+    if (!email.value.match(emailRegex)) {
+        email.classList.add("error");
+        email.parentElement.classList.add("error");
+
+        if (email.value != "") {
+            errorTxtEmail.innerText = "Enter a valid email please !! ";
+        }
+        else {
+            errorTxtEmail.innerText = "Email Address can't be blank !! ";
+        }
+
+    }
+    else {
+        email.classList.remove("error");
+        email.parentElement.classList.remove("error");
+    }
+}
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    checkInputs();
+
+    //sendEmail();
+
+
+});
