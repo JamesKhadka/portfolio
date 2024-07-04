@@ -172,6 +172,13 @@ function checkInputs() {
             item.parentElement.classList.add("error");
         }
 
+        if (items[1].value != "") {
+            checkEmail();
+        }
+        items[1].addEventListener("keyup", () => {
+            checkEmail();
+        });
+
         item.addEventListener("keyup", () => {
             if (item.value != "") {
                 item.classList.remove("error");
@@ -214,7 +221,9 @@ form.addEventListener("submit", (e) => {
     e.preventDefault();
     checkInputs();
 
-    //sendEmail();
-
+    if (!fullname.classList.contains("error") && !email.classList.contains("error") && !address.classList.contains("error")
+        && !phone.classList.contains("error") && !message.classList.contains("error")) {
+        sendEmail();
+    }
 
 });
