@@ -831,9 +831,6 @@ footer a {
 
 
 
-
-
-
 /* parallax --------------------------------------------------------------*/
 .scroll-scale {
     opacity: 0;
@@ -870,7 +867,8 @@ footer a {
     height: 35px;
     width: 35px;
     /* border: 3px solid palevioletred ; */
-    background-color: hsla(251, 54%, 64%, 0.5);   
+     background-color: hsla(184, 92%, 51%, 0.384);    
+    
   }
   
   .cursor-dot,
