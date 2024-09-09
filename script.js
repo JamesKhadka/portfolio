@@ -124,6 +124,8 @@ scrollBottom.forEach((el) => observer.observe(el));
 const scrollTop = document.querySelectorAll(".scroll-top");
 scrollTop.forEach((el) => observer.observe(el));
 
+
+
 //mouse animation
 const cursorDot = document.querySelector("[data-cursor-dot]");
 const cursorOutline = document.querySelector("[data-cursor-outline]");
@@ -162,7 +164,7 @@ const message = document.getElementById("message");
 
 function sendEmail() {
 
-    const bodyMessage = 'Full name: ${fullname.value}<br> Email: ${email.value} <br> Your Address: ${address.value} <br> Phone Number: ${number.value} <br> Message To Me: ${message.value}  ';
+    const bodyMessage = `Full name: ${fullname.value}<br> Email: ${email.value} <br> Your Address: ${address.value} <br> Phone Number: ${number.value} <br> Message To Me: ${message.value}  `;
 
     Email.send({
         Host: "smtp.elasticemail.com",
